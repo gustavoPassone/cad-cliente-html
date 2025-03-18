@@ -5,16 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    outline: none;
 }
 
 main {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        max-width: 813px;
+        margin: auto;
 
     & .container {
         justify-content: center;
-        max-width: 813px;
+        
         padding: 30px;
         
         & h1 {
@@ -47,11 +48,11 @@ main {
             & .email {
 
                 & input {
-                    width: 813px;
+                    width: 100%;
                 }
             }
 
-            & .rua-num {
+            & .nasc-cpf {
                 display: flex;
                 gap: 10px;
 
@@ -63,6 +64,8 @@ main {
                 & .nasc {
                     & input {
                         width: 200px;
+                        color: #757575;
+                        cursor: pointer;
                     }
                     
                 }
@@ -101,12 +104,16 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 6px;
+                
+                & input, label {
+                    cursor: pointer;
+                }
             }
             
             & .senha {
 
                 & input {
-                    width: 813px;
+                    width: 100%;
                     margin-bottom: 20px;
                 }
             }
@@ -118,6 +125,11 @@ main {
                 font-weight: 700;
                 border: none;
                 width: 100%;
+                cursor: pointer;
+            }
+
+            & .btn:hover {
+                background-color: #415e96;
             }
         }
     }
