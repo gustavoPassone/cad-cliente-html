@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Cliente</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Cadastro Cliente</h1>
+            <form>
+                <div class="nome-sob">
+                    <div class="nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" placeholder="Digite seu primeiro nome" id="nome" class="test">
+                    </div>
+                    
+                    <div class="sobrenome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" placeholder="Digite seu Sobrenome" id="sobrenome">
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Digite seu E-mail" id="email">
+                </div>
+
+                <div class="nasc-cpf">
+                    <div class="nasc">
+                        <label for="nasc">Data Nascimento</label>
+                        <input type="date" placeholder="dd/mm/yyyy" id="nasc">
+                    </div>
+
+                    <div class="cpf">
+                        <label for="cpf">CPF</label>
+                        <input type="text" placeholder="Ex: 000.000.000-0" id="cpf">
+                    </div>
+                </div>
+
+                <div class="cep-comp">
+                    <div class="cep">
+                        <label for="cep">CEP</label>
+                        <input type="text" placeholder="Digite seu CEP" id="cep">
+                    </div>
+                    
+                    <div class="complemento">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" placeholder="Ex: apartamento 3" id="complemento">
+                    </div>
+                </div>
+
+                <div class="cidade-bairro">
+                    <div class="cidade">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" placeholder="Nome da Cidade" id="cidade">
+                    </div>
+
+                    <div class="bairro">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" placeholder="Nome do Bairro" id="bairro">
+                    </div>
+                </div>
+
+                <div class="rua-num">
+                    <div class="rua">
+                        <label for="rua">Rua</label>
+                        <input type="text" placeholder="Nome da Rua" id="rua">
+                    </div>
+
+                    <div class="num">
+                        <label for="numero">Número da residência</label>
+                        <input type="number" placeholder="N:" id="numero">
+                    </div>
+                </div>
+
+                <div class="trabalha">
+                    <p>Trabalha?</p>
+                    <div class="sim">
+                        <label for="trabalha-sim">Sim</label>
+                        <input type="radio" id="trabalha-sim" value="Sim" name="trabalha">
+                    </div>
+
+                    <div class="nao">
+                        <label for="trabalha-nao">Nao</label>
+                        <input type="radio" id="trabalha-nao" value="Não" name="trabalha">
+                    </div>
+                </div>
+
+                <div class="senha">
+                    <div class="criar">
+                        <label for="senha">Criar Senha</label>
+                        <input type="password" placeholder="Digite sua senha" id="senha">
+                    </div>
+
+                    <div class="confirmar">
+                        <label for="confirmar">Confirmar Senha</label>
+                        <input type="password" placeholder="Digite novamente sua senha" id="confirmar">
+                    </div>
+                </div>
+
+                <input type="submit" class="btn">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

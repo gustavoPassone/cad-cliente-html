@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    & .container {
+        justify-content: center;
+        max-width: 813px;
+        padding: 30px;
+        
+        & h1 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        & form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            & input {
+                border: 0.5px #757575 solid;
+                border-radius: 6px;
+                padding: 6px 10px;
+            }
+            
+
+            & .nome-sob, .cep-comp, .cidade-bairro {
+                display: flex;
+                gap: 10px;
+                
+                & input {
+                    width: 400px;
+                }
+            }
+
+            & .email {
+
+                & input {
+                    width: 813px;
+                }
+            }
+
+            & .rua-num {
+                display: flex;
+                gap: 10px;
+
+                & .nasc, .cpf {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                & .nasc {
+                    & input {
+                        width: 200px;
+                    }
+                    
+                }
+
+                & .cpf {
+                    & input {
+                        width: 600px;
+                    }
+                }
+            }
+
+            & .rua-num {
+                display: flex;
+                gap: 10px;
+
+                & .rua, .num {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                & .rua {
+                    & input {
+                        width: 600px;
+                    }
+                    
+                }
+
+                & .num {
+                    & input {
+                        width: 200px;
+                    }
+                }
+            }
+
+            & .trabalha {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+            
+            & .senha {
+
+                & input {
+                    width: 813px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            & .btn {
+                background-color: #5378BB;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+                border: none;
+                width: 100%;
+            }
+        }
+    }
+}
